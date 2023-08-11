@@ -1,6 +1,10 @@
 # PRELUDE
 A not-so-crazy Neovim configuration
 
+![Programming](assets/Programming.webp)
+![Telescope](assets/Telescope.webp)
+![Lazy](assets/Lazy.webp)
+
 ## Dependencies
 - Neovim 0.8 or above
 - Git

@@ -3,15 +3,19 @@
 return {
   {
     'dundalek/lazy-lsp.nvim',
-    event = { "BufReadPost", "BufNewFile" },
+    event = { 'BufReadPost', 'BufNewFile' },
     dependencies = 'neovim/nvim-lspconfig',
     config = function()
-      require("neodev").setup {}
+      require('neodev').setup()
 
-      require("lazy-lsp").setup {}
+      require('lazy-lsp').setup {
+        excluded_servers = {
+          'sqls',
+        },
+      }
 
       -- TODO: Format on save (optional)
       -- vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
-    end
+    end,
   }
 }

@@ -51,3 +51,9 @@ cp ~/.config/nvim/extras/module.lua ~/.config/nvim/plugins/
 - Opt-out lazy-loading (to get you into having an optimized config)
 - Extra modules that are opt-in (enable special plugins or configs)
 - Nothing too crazy (did you read the description?)
+
+## Motivations
+This Neovim "distro" was created due to the issues and annoyances that a couple of users faced when using other Neovim distrobutions like NvChad, LazyVim, etc. (No hard feelings)
+
+## Contributions
+We welcome any contributions!

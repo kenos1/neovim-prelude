@@ -19,9 +19,9 @@ return {
     'nvimdev/lspsaga.nvim',
     keys = {
       { 'K',          '<cmd>Lspsaga hover_doc<cr>' },
-      { 'ga',         '<cmd>Lspsaga code_action<cr>' },
-      { 'gd',         '<cmd>Lspsaga peek_definition<cr>' },
-      { '<leader>lr', '<cmd>Lspsaga rename<cr>' },
+      { 'ga',         '<cmd>Lspsaga code_action<cr>',     desc = 'Code Action' },
+      { 'gd',         '<cmd>Lspsaga peek_definition<cr>', desc = 'Definition' },
+      { '<leader>lr', '<cmd>Lspsaga rename<cr>',          desc = 'Rename' },
     },
     dependencies = {
       'nvim-treesitter/nvim-treesitter',

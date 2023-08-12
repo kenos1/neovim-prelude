@@ -12,7 +12,7 @@ return {
       'L3MON4D3/LuaSnip',
     },
     config = function()
-      local cmp = require'cmp'
+      local cmp = require 'cmp'
 
       local kind_icons = {
         Text = "󰦨",

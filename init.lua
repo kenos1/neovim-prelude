@@ -13,7 +13,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Set leader key to space
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
+vim.cmd[[set clipboard=unnamedplus]]
 
 require("lazy").setup("plugins", {
   defaults = {

@@ -36,6 +36,9 @@ Prelude comes with extra modules that you can enable. They are currently 4 of th
 - Lazy-LSP: Run LSPs in `nix-shell`
 - Noice: An experimental Neovim UI plugin
 - Nvim-tree: Another file tree
+- Better-escape: Enter normal mode with `jj` and `jk`
+- Overseer: Run tasks and manage them
+- Toggleterm: Better terminal management
 
 To list them all,
 ```sh

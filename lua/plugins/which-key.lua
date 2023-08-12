@@ -14,18 +14,21 @@ return {
 
       -- Keybinds go here
       wk.register({
-        f = {name = 'Files'},
-        l = {name = 'LSP'},
-        d = {name = 'Debugging'},
+        f = { name = 'Files' },
+        l = { name = 'LSP' },
+        d = { name = 'Debugging' },
         u = {
           name = 'UI',
-          s = {'<cmd>noh<cr>', 'Clear search highlights'},
+          s = { '<cmd>noh<cr>', 'Clear search highlights' },
         },
-        s = {name = 'Search'},
-        L = {'<cmd>Lazy<cr>', 'Lazy'},
-        ['|'] = {'<cmd>vsplit<cr>', 'Vertical split'},
-        ['-'] = {'<cmd>split<cr>', 'Horizontal split'},
-      }, {prefix = '<leader>'})
+        s = { name = 'Search' },
+        r = { name = 'Tasks and Jobs' },
+        L = { '<cmd>Lazy<cr>', 'Lazy' },
+        ['|'] = { '<cmd>vsplit<cr>', 'Vertical split' },
+        ['-'] = { '<cmd>split<cr>', 'Horizontal split' },
+        ['?'] = { '<cmd>Telescope keymaps<cr>', 'Keymaps' },
+        ['h'] = { '<cmd>Telescope help_tags<cr>', 'Help' },
+      }, { prefix = '<leader>' })
     end,
   }
 }

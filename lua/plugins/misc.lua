@@ -3,7 +3,7 @@ return {
   -- Auto indent detection
   {
     'NMAC427/guess-indent.nvim',
-    event = {'BufReadPost', 'BufNewFile'},
+    event = { 'BufReadPost', 'BufNewFile' },
     opts = {}
   },
 
@@ -24,23 +24,35 @@ return {
   -- Surround
   {
     'echasnovski/mini.surround',
-    event = {'BufReadPost', 'BufNewFile'},
+    event = { 'BufReadPost', 'BufNewFile' },
     opts = {}
   },
 
   -- Bracket navigation
   {
     'echasnovski/mini.bracketed',
-    event = {'BufReadPost', 'BufNewFile'},
+    event = { 'BufReadPost', 'BufNewFile' },
+    opts = {}
+  },
+
+  -- Better text movement
+  {
+    'echasnovski/mini.move',
+    keys = {
+      '<M-h>',
+      '<M-j>',
+      '<M-k>',
+      '<M-l>',
+    },
     opts = {}
   },
 
   -- Illumination
   {
     'RRethy/vim-illuminate',
-    event = {'BufReadPost', 'BufNewFile'},
+    event = { 'BufReadPost', 'BufNewFile' },
     config = function()
-      require('illuminate').configure{}
+      require('illuminate').configure {}
     end
   },
 
@@ -49,7 +61,7 @@ return {
     'lukas-reineke/indent-blankline.nvim',
     event = { 'BufReadPost', 'BufNewFile' },
     keys = {
-      {'<leader>ui', '<cmd>IndentBlanklineToggle<cr>', desc = 'Toggle indent lines'},
+      { '<leader>ui', '<cmd>IndentBlanklineToggle<cr>', desc = 'Toggle indent lines' },
     },
     opts = {
       show_current_context = true,

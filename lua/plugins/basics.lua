@@ -7,6 +7,7 @@ return {
       options = {
         basic = true,
         extra_ui = true,
+        win_borders = 'solid',
       },
       mappings = {
         basic = true,

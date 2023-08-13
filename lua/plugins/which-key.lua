@@ -23,6 +23,7 @@ return {
         },
         s = { name = 'Search' },
         r = { name = 'Tasks and Jobs' },
+        g = { name = 'Git' },
         L = { '<cmd>Lazy<cr>', 'Lazy' },
         ['|'] = { '<cmd>vsplit<cr>', 'Vertical split' },
         ['-'] = { '<cmd>split<cr>', 'Horizontal split' },

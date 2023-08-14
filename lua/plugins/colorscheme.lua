@@ -5,16 +5,10 @@ return {
     'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
+    dependencies = 'typicode/bg.nvim' -- Sync colorscheme bg with terminal
     opts = {},
     config = function()
       vim.cmd [[colorscheme tokyonight]]
     end
   },
-
-  -- Sync colorscheme bg with terminal
-  {
-    'typicode/bg.nvim',
-    lazy = false,
-    priority = 999
-  }
 }
